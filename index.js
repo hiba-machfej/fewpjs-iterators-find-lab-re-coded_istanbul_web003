@@ -6,10 +6,12 @@ function testFunc() {
 
 
 
-function superbowlWin(array) {
-  const result = array.result.find( (W) => { 
-
-  return array.year
-}
-  )
+function superbowlWin(array){
+  let win = array.find(x => x.result == "W");
+   if(win){
+     return win.year;
+   }
+   else {
+     return undefined;
+   }
 }
